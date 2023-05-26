@@ -2,14 +2,16 @@
 
 main()
 
-{
-	int i,j;
-	
-	for(i=1;i<=5;i++)
+{   
+    int r,c,a=1;
+
+	for(r=1;r<=5;r++)
 	{
-		for(j=1;j>=5;j--)
+		for(c=1;c<=r;c++)
 		{
-			printf("%c\n",j+63);
+			printf("%c ",a+64);
+			a++;
 		}
+		printf("\n");
 	}
 }
