@@ -3,36 +3,64 @@
 main()
 
 {
-	int a=15,b=90,c=55,d=85;
+	int a,b,c,d;
+	printf("Enter value A=");
+	scanf("%d",&a);
+	printf("Enter value B=");
+	scanf("%d",&b);
+	printf("Enter value C=");
+	scanf("%d",&c);
+	printf("Enter value D=");
+	scanf("%d",&d);
 	
 	if(a>b)
 	{
-		if(b>c)
+		if(a>c)
 		{
-			if(c>a)
+			if(a>d)
 			{
-			   printf("a is max");	
+				printf("A is Max");
 			}
 			else
 			{
-				printf("b is max");
+				printf("D is Max");
 			}
-		}
-		if(c>b)
-		{
-			printf("c is max");
-		}
-		else
-		{
-			printf("b is max");
-		}
-	}
-	if(b>a)
-	{
-		printf("b is max");
+	    }
+        else
+        {
+    	    if(c>d)
+    	    {
+    	    	printf("C is Max");
+			}
+			else
+			{
+				printf("D is Max");
+			}
+	    }
 	}
 	else
 	{
-		printf("a is max");
+		if(b>c)
+		{
+			if(b>d)
+			{
+				printf("B is Max");
+			}
+			else
+			{
+				printf("D is Max");
+			}
+		}
+		else
+		{
+			if(c>d)
+			{
+				printf("C is Max");
+			}
+			else
+			{
+				printf("D is Max");
+			}
+		}
 	}
 }
